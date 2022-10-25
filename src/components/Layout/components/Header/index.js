@@ -8,6 +8,7 @@ import { Wrapper as PopperWrapper } from '~/components/Popper';
 import styles from './Header.module.scss';
 import images from '~/assets/images';
 import AccountItem from '~/components/AccountItem';
+import Button from '~/components/Button';
 
 const cx = classNames.bind(styles);
 
@@ -58,7 +59,10 @@ function Header() {
                 </Tippy>
 
                 <div className={cx('actions')}>
-                    <button>Upload</button>
+                    <Button text>Upload</Button>
+                    <Button primary className={cx('custom-login')}>
+                        Log in
+                    </Button>
                 </div>
             </div>
         </header>
